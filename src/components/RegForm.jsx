@@ -26,7 +26,7 @@ function RegForm() {
               <input className='w-full bg-white p-[10px] rounded-[10px] mb-[20px] placeholder:text-center' type="email" placeholder='Почта' />
               <input className='w-full bg-white p-[10px] rounded-[10px] mb-[20px] placeholder:text-center' type="password" placeholder='Пароль' />
               <input className='w-full bg-white p-[10px] rounded-[10px] mb-[20px] placeholder:text-center' type="text" placeholder='Факультет' />
-              <input className='w-full bg-white p-[10px] rounded-[10px] mb-[30px] placeholder:text-center' type="text" placeholder='Год выпуска' />
+              <input className='w-full bg-white p-[10px] rounded-[10px] mb-[30px] placeholder:text-center' type="number" placeholder='Год выпуска' />
             </div>
             <div className='flex justify-between'>
               <NavLink to="/regComplete">
