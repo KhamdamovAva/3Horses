@@ -8,9 +8,9 @@ function Navbar() {
                 <div className='container mx-auto flex justify-between items-center h-[80px]'>
                     <img src={navLogo} alt="" className='w-[80px]'/>
                     <div className='flex gap-8'>
-                        <a href="" className='font-sans text-xl'>Главная</a>
-                        <a href="" className='font-sans text-xl'>Мероприятия</a>
-                        <a href="" className='font-sans text-xl'>Личный кабинет</a>
+                        <a href="#" className='font-sans text-xl'>Главная</a>
+                        <a href="#" className='font-sans text-xl'>Мероприятия</a>
+                        <a href="#" className='font-sans text-xl'>Личный кабинет</a>
                     </div>
                 </div>
             </nav>
