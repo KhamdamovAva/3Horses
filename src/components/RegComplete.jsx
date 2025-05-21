@@ -9,7 +9,7 @@ function RegComplete() {
     <>
       <Navbar />
       <div className='container pt-[160px] pb-[100px]'>
-        <div className='max-w-[428px] rounded-[10px] p-[40px] text-center min-h-[474px] m-auto' style={{
+        <div className='max-w-[428px] rounded-[10px] p-[10px] sm:p-[40px] text-center min-h-[474px] m-auto' style={{
           backgroundImage: `url(${regImg})`,
           backgroundBlendMode: 'overlay',
           backgroundRepeat: 'no-repeat',
