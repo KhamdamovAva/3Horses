@@ -8,7 +8,7 @@ function Registration() {
   return (
     <>
       <Navbar />
-      <div className='container min-h-[100vh] pt-[200px]'>
+      <div className='container pt-[160px] pb-[100px]'>
         <form action="#" className='max-w-[428px] rounded-[10px] p-[40px] text-center min-h-[474px] m-auto' style={{
           backgroundImage: `url(${regImg})`,
           backgroundBlendMode: 'overlay',
@@ -23,7 +23,7 @@ function Registration() {
                 Зарегистрироваться
               </button>
             </NavLink>
-            <NavLink>
+            <NavLink to="/Login">
               <button className='w-full text-[18px] cursor-pointer rounded-[10px] p-[10px] h-[50px] bg-white text-black hover:bg-black hover:text-white
            transition ease-in-out duration-600'>
                 Войти
