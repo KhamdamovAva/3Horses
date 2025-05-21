@@ -9,7 +9,7 @@ function RegForm() {
     <>
       <Navbar />
       <div className='container pt-[160px] pb-[100px]'>
-        <form action="#" className='max-w-[428px] rounded-[10px] p-[40px] text-center min-h-[474px] m-auto' style={{
+        <form action="#" className='max-w-[428px] rounded-[10px] p-[20px] sm:p-[40px] text-center min-h-[474px] m-auto' style={{
           backgroundImage: `url(${regImg})`,
           backgroundBlendMode: 'overlay',
           backgroundRepeat: 'no-repeat',
@@ -28,7 +28,7 @@ function RegForm() {
               <input className='w-full bg-white p-[10px] rounded-[10px] mb-[20px] placeholder:text-center' type="text" placeholder='Факультет' />
               <input className='w-full bg-white p-[10px] rounded-[10px] mb-[30px] placeholder:text-center' type="number" placeholder='Год выпуска' />
             </div>
-            <div className='flex justify-between'>
+            <div className='flex justify-between gap-[10px]'>
               <NavLink to="/regComplete">
                 <button className='cursor-pointer bg-white w-[130px] p-[10px] rounded-[10px] hover:bg-black hover:text-white
            transition ease-in-out duration-600'>Дальше</button>

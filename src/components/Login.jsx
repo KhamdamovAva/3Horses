@@ -9,7 +9,7 @@ function Login() {
     <>
       <Navbar />
       <div className='container pt-[160px] pb-[100px]'>
-        <form action="#" className='max-w-[428px] rounded-[10px] p-[60px] text-center min-h-[474px] m-auto' style={{
+        <form action="#" className='max-w-[428px] rounded-[10px] py-[60px] px-[20px] sm:p-[60px] text-center min-h-[474px] m-auto' style={{
           backgroundImage: `url(${regImg})`,
           backgroundBlendMode: 'overlay',
           backgroundRepeat: 'no-repeat',
@@ -26,7 +26,7 @@ function Login() {
               <input className='w-full bg-white p-[10px] rounded-[10px] mb-[40px] ' type="password" placeholder='Пароль' />
 
             </div>
-            <div className='flex justify-between'>
+            <div className='flex justify-between gap-[10px]'>
               <NavLink to="/">
                 <button className='cursor-pointer bg-white w-[130px] p-[10px] rounded-[10px] hover:bg-black hover:text-white
            transition ease-in-out duration-600'>Войти</button>
