@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import regImg from '../assets/images/regImg.png'
+import { NavLink } from 'react-router-dom'
 
 function Registration() {
   return (
@@ -16,14 +17,18 @@ function Registration() {
           backgroundSize: 'cover',
         }}>
           <div className='mt-[130px]'>
-            <button className='w-full text-[18px] cursor-pointer rounded-[10px] p-[10px] h-[50px] mb-[20px] bg-white text-black hover:bg-black hover:text-white
+            <NavLink to='/regForm'>
+              <button className='w-full text-[18px] cursor-pointer rounded-[10px] p-[10px] h-[50px] mb-[20px] bg-white text-black hover:bg-black hover:text-white
             transition ease-in-out duration-600'>
-              Зарегистрироваться
-            </button>
-            <button className='w-full text-[18px] cursor-pointer rounded-[10px] p-[10px] h-[50px] bg-white text-black hover:bg-black hover:text-white
+                Зарегистрироваться
+              </button>
+            </NavLink>
+            <NavLink>
+              <button className='w-full text-[18px] cursor-pointer rounded-[10px] p-[10px] h-[50px] bg-white text-black hover:bg-black hover:text-white
            transition ease-in-out duration-600'>
-              Войти
-            </button>
+                Войти
+              </button>
+            </NavLink>
           </div>
         </form>
       </div>
