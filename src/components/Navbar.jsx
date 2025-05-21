@@ -6,18 +6,16 @@ function Navbar() {
     return (
         <>
             <nav className='flex justify-center bg-white shadow-md fixed w-full z-10'>
-                <div className='container mx-auto flex justify-between items-center h-[80px]'>
+                <div className='container mx-auto flex justify-between items-center h-[80px] px-[10px]'>
                     <NavLink to="/">
-                        <img src={navLogo} alt="Logotype" className='w-[80px]' />
+                        <img src={navLogo} alt="Logotype" className='w-[65px] md:w-[80px]' />
                     </NavLink>
-                    <div className='flex gap-8'>
-                        <NavLink className='font-sans text-xl' to='/'>
+                    <div className='flex gap-2 md:gap-8'>
+                        <NavLink className='font-sans text-[12px] sm:text-[18px] md:text-xl' to='/'>
                             Главная
                         </NavLink>
-                        <NavLink className='font-sans text-xl' to="/events">
-                            Мероприятия
-                        </NavLink>
-                        <NavLink className='font-sans text-xl' to='/registration'>
+                        <NavLink href="#" className='font-sans text-[12px] sm:text-[18px] md:text-xl' to="/events">Мероприятия</NavLink>
+                        <NavLink className='font-sans text-[12px] sm:text-[18px] md:text-xl' to='/registration'>
                             Личный кабинет
                         </NavLink>
                     </div>
