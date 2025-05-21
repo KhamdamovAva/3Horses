@@ -29,10 +29,14 @@ function RegForm() {
               <input className='w-full bg-white p-[10px] rounded-[10px] mb-[30px] placeholder:text-center' type="text" placeholder='Год выпуска' />
             </div>
             <div className='flex justify-between'>
-              <button className='cursor-pointer bg-white w-[130px] p-[10px] rounded-[10px] hover:bg-black hover:text-white
+              <NavLink to="/regComplete">
+                <button className='cursor-pointer bg-white w-[130px] p-[10px] rounded-[10px] hover:bg-black hover:text-white
            transition ease-in-out duration-600'>Дальше</button>
-              <button className='cursor-pointer bg-transparent text-white p-[10px] border-[2px] border-white w-[130px] rounded-[10px] hover:bg-white
+              </NavLink>
+              <NavLink to='/registration'>
+                <button className='cursor-pointer bg-transparent text-white p-[10px] border-[2px] border-white w-[130px] rounded-[10px] hover:bg-white
               hover:text-black transition ease-in-out duration-600'>Отменить</button>
+              </NavLink>
             </div>
           </div>
         </form>
