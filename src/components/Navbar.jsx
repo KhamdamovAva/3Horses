@@ -14,7 +14,7 @@ function Navbar() {
                         <NavLink className='font-sans text-[12px] sm:text-[18px] md:text-xl' to='/'>
                             Главная
                         </NavLink>
-                        <a href="#" className='font-sans text-[12px] sm:text-[18px] md:text-xl'>Мероприятия</a>
+                        <NavLink href="#" className='font-sans text-[12px] sm:text-[18px] md:text-xl' to="/events">Мероприятия</NavLink>
                         <NavLink className='font-sans text-[12px] sm:text-[18px] md:text-xl' to='/registration'>
                             Личный кабинет
                         </NavLink>
