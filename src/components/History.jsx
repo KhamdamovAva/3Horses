@@ -6,8 +6,8 @@ import historyImg4 from "../assets/images/historyImg4.png"
 
 function History() {
   return (
-    <section className='py-[50px]'>
-      <div className='text-center mb-[60px]'>
+    <section className='pt-[0] pb-[50px]'>
+      <div className='text-center mb-[50px]'>
         <h2 className='text-[50px] font-[600] text-[#591516]'>История</h2>
       </div>
       <div className="max-w-[1280px] mx-auto px-4">
