@@ -4,6 +4,7 @@ import HomePage from '../pages/HomePage'
 import Registration from '../components/Registration'
 import RegForm from '../components/RegForm'
 import RegComplete from '../components/RegComplete'
+import Login from '../components/Login'
 
 function AppRouter() {
     return (
@@ -13,6 +14,7 @@ function AppRouter() {
                 <Route path='registration' element={<Registration />} />
                 <Route path='regForm' element={<RegForm />} />
                 <Route path='regComplete' element={<RegComplete />} />
+                <Route path='Login' element={<Login />} />
             </Routes>
         </>
     )
