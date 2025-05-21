@@ -5,6 +5,10 @@
 }
 
 .container {
-  width: 1440px;
-  margin: auto;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #fcf7f1;
 }
