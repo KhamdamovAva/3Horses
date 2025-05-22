@@ -3,7 +3,7 @@ import footerLogo from '../assets/icons/footerLogo.svg'
 
 function Footer() {
   return (
-    <div className="min-h-[204px] bg-[#262626] py-[20px]">
+    <div className="min-h-[230px] bg-[#262626] py-[20px]">
       <div className='max-w-[1280px] mx-auto px-4'>
         <nav className="flex justify-center text-white pt-[40px] pb-[10px]">
           <ul className="flex mb-[20px] sm:mb-0 gap-[10px] sm:gap-[30px] text-[14px] sm:text-[16px]">

@@ -8,7 +8,7 @@ function Registration() {
   return (
     <>
       <Navbar />
-      <div className='container pt-[160px] pb-[100px]'>
+      <div className='container mx-auto pt-[160px] pb-[100px]'>
         <div className='mx-[15px]'>
           <form action="#" className='max-w-[428px] rounded-[10px] p-[40px] text-center min-h-[474px] m-auto' style={{
             backgroundImage: `url(${regImg})`,
