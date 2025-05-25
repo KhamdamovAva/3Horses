@@ -1,112 +1,75 @@
-import React from "react";
-import Navbar from "./Navbar";
-import Background from "../assets/images/background.jpg";
-import Meropriyatsiya2Data from "./Data/Meropriyatsiya2Data";
-import Footer from "./Footer";
+// src/components/Meropriyatsiya2.jsx
+import React from 'react';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import Background from '../assets/images/background.jpg';
+import Meropriyatsiya2Data from './Data/Meropriyatsiya2Data';
+
+const Card = ({ item }) => (
+  <div className="relative flex flex-col">
+    <img
+      src={item.img}
+      alt={item.h1}
+      className="w-[40%]  sm:w-full min-h-[228px] object-cover rounded-xl"
+    />
+
+    {/* дата поверх картинки */}
+    <div className="absolute inset-x-0 bottom-0 flex justify-center">
+      <div className="bg-[#FCF7F1] text-[#591516] w-40 h-24 flex flex-col items-center justify-center rounded-t-md">
+        <span className="text-3xl lg:text-4xl font-semibold">23</span>
+        <span className="text-sm lg:text-base">{item.text}</span>
+      </div>
+    </div>
+
+    {/* контент */}
+    <div className="mt-6">
+      <h2 className="text-xl lg:text-2xl font-medium mb-4">{item.h1}</h2>
+
+      <div className="flex items-center gap-3 mb-3">
+        <p className="text-sm lg:text-base">{item.p}</p>
+        <div className="flex-1 border-b border-[#B0ACA8]" />
+        <p className="text-sm lg:text-base">{item.p2}</p>
+      </div>
+
+      <div className="flex items-center gap-3">
+        <p className="text-sm lg:text-base">{item.p3}</p>
+        <div className="flex-1 border-b border-[#B0ACA8]" />
+        <p className="text-sm lg:text-base">{item.p4}</p>
+      </div>
+    </div>
+  </div>
+);
 
 export default function Meropriyatsiya2() {
-  const repeatedData = [
-    ...Meropriyatsiya2Data,
-    ...Meropriyatsiya2Data,
-    ...Meropriyatsiya2Data,
-    ...Meropriyatsiya2Data,
-    ...Meropriyatsiya2Data,
-  ];
-
-  const topItems = repeatedData.slice(0, 3);
-  const bottomItems = repeatedData.slice(3, 5);
+  // продублировали данные 5 × (как было)x
+  const repeatedData = Array.from({ length: 5 }, () => Meropriyatsiya2Data).flat();
 
   return (
     <>
       <Navbar />
-      <div className="relative w-full h-[280px] pt-30">
-        <div>
-          <img
-            src={Background}
-            alt="Foto"
-            className="w-full h-[228px] object-cover object-center brightness-95"
-          />
-        </div>
-        <div className="container">
-          <h1 className="absolute top-1/2 translate-y-2/3 text-6xl font-semibold leading-[68px] text-[#591516]">
-            Мероприятия
-          </h1>
-        </div>
-        <div className="container pt-25 flex flex-col md:flex-row gap-10">
-          {topItems.map((user, index) => (
-            <div
-              key={index}
-              className="relative w-full md:w-[408px] h-[228px] mb-10 flex-shrink-0"
-            >
-              <img
-                src={user.img}
-                alt="foto"
-                className="w-full h-full object-cover"
-              />
-              <h1 className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/12 text-center text-[#591516] bg-[#FCF7F1] w-[192px] h-[96px] pt-6">
-                <span className="font-semibold text-[40px] leading-12">23</span>
-                <br />
-                {user.text}
-              </h1>
-              <div>
-                <h1 className="pt-10 font-normal text-[28px] leading-[36px]">
-                  {user.h1}.
-                </h1>
 
-                <div className="flex items-center gap-3 mt-6">
-                  <p className="font-normal text-base leading-6">{user.p}</p>
-                  <div className="w-[59px] h-[6px] border-b border-[#B0ACA8] relative -bottom-1"></div>
+      {/* шапка */}
+      <section className="relative">
+        <img
+          src={Background}
+          alt="background"
+          className="w-full h-56 sm:h-72 object-cover brightness-95"
+        />
+        <h1 className="absolute inset-0 flex items-center justify-center text-4xl sm:text-5xl lg:text-6xl font-semibold text-[#591516]">
+          Мероприятия
+        </h1>
+      </section>
 
-                  <p className="font-normal text-base leading-6">{user.p2}</p>
-                </div>
-
-                <div className="flex items-center gap-3 mt-3">
-                  <p className="font-normal text-base leading-6">{user.p3}</p>
-
-                  <div className="w-[132px] h-[6px] border-b border-[#B0ACA8] relative -bottom-1"></div>
-
-                  <p className="font-normal text-base leading-6">{user.p4}</p>
-                </div>
-              </div>
-            </div>
+      {/* сетка карточек */}
+      <section className="container mx-auto py-12 px-4 lg:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          {repeatedData.map((item, idx) => (
+            <Card key={idx} item={item} />
           ))}
         </div>
-        <div className="container pt-50 flex flex-col md:flex-row gap-10 pb-50">
-          {bottomItems.map((user, index) => (
-            <div
-              key={index + 3}
-              className="relative w-full md:w-[408px] h-[228px] mb-10 flex-shrink-0"
-            >
-              <img
-                src={user.img}
-                alt="foto"
-                className="w-full h-full object-cover"
-              />
-              <h1 className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/12 text-center text-[#591516] bg-[#FCF7F1] w-[192px] h-[96px] pt-6">
-                <span className="font-semibold text-[40px] leading-12">23</span>
-                <br />
-                {user.text}
-              </h1>
-              <div>
-                <h1 className="pt-10 font-normal text-[28px] leading-[36px]">
-                  {user.h1}.
-                </h1>
-                <div className="flex items-center gap-3 mt-6">
-                  <p className="font-normal text-base leading-6">{user.p}</p>
-                  <div className="w-[59px] h-[6px] border-b border-[#B0ACA8] relative -bottom-1"></div>
-                  <p className="font-normal text-base leading-6">{user.p2}</p>
-                </div>
-                <div className="flex items-center gap-3 mt-3">
-                  <p className="font-normal text-base leading-6">{user.p3}</p>
-                  <div className="w-[132px] h-[6px] border-b border-[#B0ACA8] relative -bottom-1"></div>
-                  <p className="font-normal text-base leading-6">{user.p4}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-        <Footer />
-      </div>
+      </section>
+
+      <Footer />
     </>
   );
 }
