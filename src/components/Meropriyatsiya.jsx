@@ -50,29 +50,25 @@ export default function Meropriyatsiya() {
               Основная информация
             </h2>
 
-<div className="flex flex-col sm:flex-row justify-between w-full gap-6 pt-6">
-  {/* Chap tomon (har doim yuqorida turadi) */}
-  <div className="text-left w-full sm:w-1/2">
-    <h3 className="text-[#262626] font-semibold text-[16px]">
-      Место проведения <br />
-      <span className="font-normal text-[16px]">
-        Бутырская ул. Д.75
-      </span>
-    </h3>
-  </div>
+            <div className="flex flex-col sm:flex-row justify-between w-full gap-6 pt-6">
+              <div className="text-left w-full sm:w-1/2">
+                <h3 className="text-[#262626] font-semibold text-[16px]">
+                  Место проведения <br />
+                  <span className="font-normal text-[16px]">
+                    Бутырская ул. Д.75
+                  </span>
+                </h3>
+              </div>
 
-  {/* O‘ng tomon – lg ekranlarda pastga tushadi */}
-  <div className="text-left sm:text-right w-full sm:w-1/2 lg:mt-6 lg:self-end">
-    <h3 className="text-[#262626] font-semibold text-[16px]">
-      Дата проведения <br />
-      <span className="font-normal text-[16px]">
-        23 апреля, 17:00
-      </span>
-    </h3>
-  </div>
-</div>
-
-
+              <div className="text-left sm:text-right w-full sm:w-1/2 lg:mt-6 lg:self-end">
+                <h3 className="text-[#262626] font-semibold text-[16px]">
+                  Дата проведения <br />
+                  <span className="font-normal text-[16px]">
+                    23 апреля, 17:00
+                  </span>
+                </h3>
+              </div>
+            </div>
           </div>
         </div>
         <Link to={"/Meropriyatsiya2"}>

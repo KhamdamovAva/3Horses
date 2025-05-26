@@ -1,21 +1,22 @@
 import React from "react";
-import Istoria1 from './Istoriya1'
+import Istoria1 from './Istoriya1';
 import Background from "../../assets/images/background.jpg";
-
+import Navbar from "../Navbar2";
 
 export default function Istoria() {
   return (
     <>
-      <div className="relative w-full h-[280px] pt-30">
+      <Navbar />
+      <div className="relative w-full pt-20">
         <div>
           <img
             src={Background}
             alt="Foto"
-            className="w-full h-[228px] object-cover object-center brightness-95"
+            className="w-full h-[200px] sm:h-[228px] md:h-[280px] object-cover object-center brightness-95"
           />
         </div>
         <div className="container">
-          <h1 className="absolute top-1/2 translate-y-2/3 text-6xl font-semibold leading-[68px] text-[#591516]">
+          <h1 className="absolute top-[25%] translate-y-[35%] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-[#591516]">
             История
           </h1>
         </div>
