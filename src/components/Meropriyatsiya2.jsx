@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import MonthYearCarousel from "./MonthYearCarousel";
 import Background from "../assets/images/background.jpg";
 import Meropriyatsiya2Data from "./Data/Meropriyatsiya2Data";
 import Footer from "./Footer";
@@ -19,6 +20,9 @@ export default function Meropriyatsiya2() {
   return (
     <>
       <Navbar />
+      <div className="bg-[#FCF7F1]">
+        <MonthYearCarousel />
+      </div>
       <div className="relative w-full h-[280px] pt-30">
         <div>
           <img
@@ -52,19 +56,14 @@ export default function Meropriyatsiya2() {
                 <h1 className="pt-10 font-normal text-[28px] leading-[36px]">
                   {user.h1}.
                 </h1>
-
                 <div className="flex items-center gap-3 mt-6">
                   <p className="font-normal text-base leading-6">{user.p}</p>
                   <div className="w-[59px] h-[6px] border-b border-[#B0ACA8] relative -bottom-1"></div>
-
                   <p className="font-normal text-base leading-6">{user.p2}</p>
                 </div>
-
                 <div className="flex items-center gap-3 mt-3">
                   <p className="font-normal text-base leading-6">{user.p3}</p>
-
                   <div className="w-[132px] h-[6px] border-b border-[#B0ACA8] relative -bottom-1"></div>
-
                   <p className="font-normal text-base leading-6">{user.p4}</p>
                 </div>
               </div>
