@@ -7,7 +7,8 @@ export default function Istoria() {
   return (
     <>
       <Navbar />
-      <div className="relative w-full pt-20">
+      <div className="relative w-full h-[280px] pt-30">
+
         <div>
           <img
             src={Background}
