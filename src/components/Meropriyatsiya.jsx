@@ -16,7 +16,7 @@ export default function Meropriyatsiya() {
 
         <h2 className="text-center font-semibold text-[24px] sm:text-[32px] lg:text-[40px] leading-[32px] sm:leading-[40px] lg:leading-[48px] pt-6">
           Встреча выпускников. <br />
-          Первое заседание клуба «Три коня»
+          Первое заседание клуба «Три коня»
         </h2>
 
         <div className="pt-10 sm:pt-20 w-full h-[280px] sm:h-[400px] lg:h-[480px] overflow-hidden rounded-md">

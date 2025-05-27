@@ -1,13 +1,14 @@
 import React from "react";
 import Istoria1 from './Istoriya1';
 import Background from "../../assets/images/background.jpg";
-import Navbar from "../Navbar2";
+import Navbar from "../Navbar";
 
 export default function Istoria() {
   return (
     <>
       <Navbar />
-      <div className="relative w-full pt-20">
+      <div className="relative w-full h-[280px] pt-30">
+
         <div>
           <img
             src={Background}
