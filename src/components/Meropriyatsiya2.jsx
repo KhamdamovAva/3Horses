@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar2";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Background from "../assets/images/background.jpg";
 import Meropriyatsiya2Data from "./Data/Meropriyatsiya2Data";

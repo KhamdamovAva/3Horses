@@ -1,7 +1,7 @@
 import React from "react";
 import Istoria1 from './Istoriya1';
 import Background from "../../assets/images/background.jpg";
-import Navbar from "../Navbar2";
+import Navbar from "../Navbar";
 
 export default function Istoria() {
   return (
