@@ -15,30 +15,45 @@ function Navbar() {
                         <NavLink
                             to="/"
                             className={({ isActive }) =>
-                                `font-sans text-[14px] sm:text-[18px] md:text-xl border-b-2 ${
-                                    isActive ? 'border-[#262626]' : 'border-transparent'
+                                `font-sans text-[14px] sm:text-[18px] md:text-xl border-b-2 ${isActive ? 'border-[#262626]' : 'border-transparent'
                                 } hover:border-[#262626]`
                             }
                         >
                             Главная
                         </NavLink>
-
                         <NavLink
-                            to="/Meropriyatsiya"
+                            to="/Meropriyatsiya2"
                             className={({ isActive }) =>
-                                `font-sans text-[14px] sm:text-[18px] md:text-xl border-b-2 ${
-                                    isActive ? 'border-[#262626]' : 'border-transparent'
+                                `font-sans text-[14px] sm:text-[18px] md:text-xl border-b-2 ${isActive ? 'border-[#262626]' : 'border-transparent'
                                 } hover:border-[#262626]`
                             }
                         >
                             Мероприятия
                         </NavLink>
+                        <NavLink
+                            to="/istoriya"
+                            className={({ isActive }) =>
+                                `font-sans text-[14px] sm:text-[18px] md:text-xl border-b-2 ${isActive ? 'border-[#262626]' : 'border-transparent'
+                                } hover:border-[#262626]`
+                            }
+                        >
+                            История
+                        </NavLink>
 
+
+                        <NavLink
+                            to="/gallery"
+                            className={({ isActive }) =>
+                                `font-sans text-[14px] sm:text-[18px] md:text-xl border-b-2 ${isActive ? 'border-[#262626]' : 'border-transparent'
+                                } hover:border-[#262626]`
+                            }
+                        >
+                            Галерея
+                        </NavLink>
                         <NavLink
                             to="/registration"
                             className={({ isActive }) =>
-                                `font-sans text-[14px] sm:text-[18px] md:text-xl border-b-2 ${
-                                    isActive ? 'border-[#262626]' : 'border-transparent'
+                                `font-sans text-[14px] sm:text-[18px] md:text-xl border-b-2 ${isActive ? 'border-[#262626]' : 'border-transparent'
                                 } hover:border-[#262626]`
                             }
                         >

@@ -3,22 +3,42 @@ import IstoriyaData from "../Data/IstoriyaData";
 
 export default function Istoriya2() {
   return (
-    <>
-      <div className="container lg:px-0 px-5">
-        {IstoriyaData.map((items) => (
-          <div className="flex lg:flex-row flex-col items-center justify-between lg:gap-0 gap-6">
-            <div className="w-full">
-              <h1 key={items.id} className="text-4xl font-semibold text-[#591516] mb-4"> {items.h3} </h1>
-              <p className="text-[#262626] text-base font-normal leading-6 w-full md:w-[686px]">{items.text3}</p>
-              <div className="flex md:flex-row flex-col gap-10 items-center pt-6">
-                <img src={items.img4} alt="Foto" className="w-full max-w-[432px] h-[196px]" />
-                <img src={items.img5} alt="Foto" className="w-full max-w-[240px] h-[196px]" />
-              </div>
+    <section className="container mx-auto px-5 lg:px-0 my-16">
+      {IstoriyaData.map((item) => (
+        <article
+          key={item.id}
+          className="flex flex-col lg:flex-row  items-center justify-between gap-8"
+        >
+          <div className="w-full max-w-xl">
+            <h3 className="text-4xl font-semibold text-[#591516] mb-4 items-start text-center lg:text-left">
+              {item.h3}
+            </h3>
+            <p className="text-[#262626] text-base font-normal leading-7 w-full md:w-[686px] break-words">
+              {item.text3}
+            </p>
+            <div className="flex flex-col md:flex-row gap-10 items-center pt-6">
+              <img
+                src={item.img4}
+                alt="image 4"
+                className="w-full max-w-[432px] h-[196px] object-cover rounded-md"
+                loading="lazy"
+              />
+              <img
+                src={item.img5}
+                alt="image 5"
+                className="w-full max-w-[240px] h-[196px] object-cover rounded-md"
+                loading="lazy"
+              />
             </div>
-            <img src={items.img6} alt="Foto" className="w-[433px] h-[460px]" />
           </div>
-        ))}
-      </div>
-    </>
+          <img
+            src={item.img6}
+            alt="image 6"
+            className="w-full max-w-[283px] h-auto object-cover rounded-md"
+            loading="lazy"
+          />
+        </article>
+      ))}
+    </section>
   );
 }
